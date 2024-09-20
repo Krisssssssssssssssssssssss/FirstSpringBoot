@@ -34,7 +34,7 @@ public class HelloController {
         while (iterator.hasNext()) {
             Message message = iterator.next();
             if (message.getId().equals(id)) {
-                iterator.remove();  // Remove the message from the list
+                iterator.remove();
                 return "Message with ID " + id + " deleted successfully.";
             }
         }
